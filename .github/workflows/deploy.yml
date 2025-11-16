@@ -1,0 +1,48 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build
+        run: npm run build
+        env:
+          VITE_AI_PROVIDER: ${{ secrets.VITE_AI_PROVIDER }}
+          VITE_DEEPSEEK_IS_LOCAL: ${{ secrets.VITE_DEEPSEEK_IS_LOCAL }}
+          VITE_DEEPSEEK_BASE_URL: ${{ secrets.VITE_DEEPSEEK_BASE_URL }}
+          VITE_DEEPSEEK_MODEL: ${{ secrets.VITE_DEEPSEEK_MODEL }}
+          VITE_USE_REAL_WEATHER: ${{ secrets.VITE_USE_REAL_WEATHER }}
+          VITE_USE_REAL_SEA_STATE: ${{ secrets.VITE_USE_REAL_SEA_STATE }}
+          VITE_WEATHER_PROVIDER: ${{ secrets.VITE_WEATHER_PROVIDER }}
+          VITE_SEA_STATE_PROVIDER: ${{ secrets.VITE_SEA_STATE_PROVIDER }}
+          VITE_CWB_API_KEY: ${{ secrets.VITE_CWB_API_KEY }}
+          VITE_USE_MOCK_DATA: ${{ secrets.VITE_USE_MOCK_DATA }}
+      
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: '--prod'
+
+

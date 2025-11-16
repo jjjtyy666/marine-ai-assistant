@@ -1,0 +1,94 @@
+{
+  "app": {
+    "title": "Marine AI Assistant",
+    "subtitle": "海洋智慧助理"
+  },
+  "nav": {
+    "home": "首頁",
+    "chat": "AI 對話",
+    "dashboard": "儀表板",
+    "spots": "地圖瀏覽",
+    "plan": "行程規劃"
+  },
+  "home": {
+    "hero": {
+      "title": "探索海洋，智慧啟航",
+      "description": "結合 AI 技術與即時海況數據，為您的海洋活動提供專業建議",
+      "cta": "開始對話"
+    },
+    "features": {
+      "chat": {
+        "title": "AI 智慧對話",
+        "description": "專業的海洋活動建議與即時問答"
+      },
+      "dashboard": {
+        "title": "海況儀表板",
+        "description": "即時監控風浪潮汐等關鍵指標"
+      },
+      "spots": {
+        "title": "地圖瀏覽",
+        "description": "探索熱門衝浪點與近岸站點"
+      }
+    },
+    "popularSpots": "熱門地點"
+  },
+  "chat": {
+    "title": "AI 對話助理",
+    "placeholder": "輸入您的問題...",
+    "quickPrompts": {
+      "title": "快速提示",
+      "prompt1": "幫我評估明天 06:00 在旗津是否適合新手衝浪",
+      "prompt2": "今天北海岸是否適合新手？",
+      "prompt3": "南風 8 m/s、浪高 1.2 m、潮差 0.8 m，適合 SUP 嗎？"
+    },
+    "toolCards": {
+      "weather": "天氣資訊",
+      "seaState": "海況資訊",
+      "tide": "潮汐資訊"
+    }
+  },
+  "dashboard": {
+    "title": "海況儀表板",
+    "selectSpot": "選擇地點",
+    "selectDate": "選擇日期",
+    "kpi": {
+      "windSpeed": "風速",
+      "windDirection": "風向",
+      "waveHeight": "浪高",
+      "wavePeriod": "週期",
+      "tide": "潮位",
+      "visibility": "能見度",
+      "rainfall": "降雨機率",
+      "temperature": "體感溫度"
+    },
+    "charts": {
+      "wind": "風速/風向 (24小時)",
+      "wave": "浪高/週期",
+      "tide": "潮汐曲線",
+      "rain": "降雨/能見度"
+    },
+    "warnings": {
+      "highWave": "浪高警告",
+      "strongWind": "強風警告"
+    }
+  },
+  "spots": {
+    "title": "地圖瀏覽",
+    "search": "搜尋地點...",
+    "favorite": "收藏",
+    "details": "詳細資訊",
+    "startChat": "開始對話"
+  },
+  "common": {
+    "loading": "載入中...",
+    "error": "發生錯誤",
+    "retry": "重試",
+    "copy": "複製",
+    "close": "關閉",
+    "back": "返回",
+    "next": "下一步",
+    "confirm": "確認",
+    "cancel": "取消"
+  }
+}
+

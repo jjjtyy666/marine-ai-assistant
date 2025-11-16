@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vscode
+.idea
+coverage
+build
+.next
+.cache
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+

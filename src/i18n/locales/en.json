@@ -1,0 +1,93 @@
+{
+  "app": {
+    "title": "Marine AI Assistant",
+    "subtitle": "Your Marine Intelligence Companion"
+  },
+  "nav": {
+    "home": "Home",
+    "chat": "AI Chat",
+    "dashboard": "Dashboard",
+    "spots": "Map"
+  },
+  "home": {
+    "hero": {
+      "title": "Explore the Ocean, Navigate Smartly",
+      "description": "Combining AI technology with real-time ocean data for professional marine activity guidance",
+      "cta": "Start Chat"
+    },
+    "features": {
+      "chat": {
+        "title": "AI Chat",
+        "description": "Professional marine activity advice and real-time Q&A"
+      },
+      "dashboard": {
+        "title": "Sea Dashboard",
+        "description": "Real-time monitoring of key indicators like wind, waves, and tides"
+      },
+      "spots": {
+        "title": "Map Explorer",
+        "description": "Explore popular surf spots and coastal stations"
+      }
+    },
+    "popularSpots": "Popular Spots"
+  },
+  "chat": {
+    "title": "AI Assistant",
+    "placeholder": "Type your question...",
+    "quickPrompts": {
+      "title": "Quick Prompts",
+      "prompt1": "Evaluate if Cijin is suitable for beginner surfing tomorrow at 06:00",
+      "prompt2": "Is North Coast suitable for beginners today?",
+      "prompt3": "Is SUP suitable with 8 m/s south wind, 1.2m waves, 0.8m tidal range?"
+    },
+    "toolCards": {
+      "weather": "Weather Info",
+      "seaState": "Sea State",
+      "tide": "Tide Info"
+    }
+  },
+  "dashboard": {
+    "title": "Sea Dashboard",
+    "selectSpot": "Select Spot",
+    "selectDate": "Select Date",
+    "kpi": {
+      "windSpeed": "Wind Speed",
+      "windDirection": "Wind Dir",
+      "waveHeight": "Wave Height",
+      "wavePeriod": "Period",
+      "tide": "Tide",
+      "visibility": "Visibility",
+      "rainfall": "Rain Prob",
+      "temperature": "Feels Like"
+    },
+    "charts": {
+      "wind": "Wind Speed/Direction (24h)",
+      "wave": "Wave Height/Period",
+      "tide": "Tide Curve",
+      "rain": "Rain/Visibility"
+    },
+    "warnings": {
+      "highWave": "High Wave Alert",
+      "strongWind": "Strong Wind Alert"
+    }
+  },
+  "spots": {
+    "title": "Map Explorer",
+    "search": "Search spots...",
+    "favorite": "Favorite",
+    "details": "Details",
+    "startChat": "Start Chat"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "copy": "Copy",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  }
+}
+
