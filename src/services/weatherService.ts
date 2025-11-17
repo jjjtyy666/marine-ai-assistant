@@ -216,7 +216,6 @@ async function getCWBData(
   const wdData = weatherElements.find((e: any) => e.elementName === 'WD') // 風向
 
   // 取得當前時間的資料（第一個時間點）
-  const currentTime = wxData?.time?.[0]
   const currentPop = popData?.time?.[0]?.elementValue?.[0]?.value || '0'
   const currentMinT = minTData?.time?.[0]?.elementValue?.[0]?.value || '25'
   const currentMaxT = maxTData?.time?.[0]?.elementValue?.[0]?.value || '30'
