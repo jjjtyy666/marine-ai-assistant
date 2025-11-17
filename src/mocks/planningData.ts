@@ -1,8 +1,8 @@
 import type { PlanDay, PlanPOIItem, Mobility } from '@/types'
-import { mockPOIs, getPOIsBySpot } from './poi'
+import { getPOIsBySpot } from './poi'
 import { getMockSeaState } from './seaStateData'
 import { getMockWeather } from './weatherData'
-import { calculateDistance, estimateTravelTime, minutesToTime, parseTimeToMinutes, getSunsetTime } from '@/lib/planningUtils'
+import { minutesToTime, parseTimeToMinutes, getSunsetTime } from '@/lib/planningUtils'
 
 export function generateDayPlan(
   spotId: string,
@@ -27,7 +27,7 @@ export function generateDayPlan(
   const warnings: string[] = []
   
   let currentTime = parseTimeToMinutes(startTime)
-  const endMinutes = parseTimeToMinutes(endTime)
+  parseTimeToMinutes(endTime) // 保留用於未來擴展
   let totalCost = 0
 
   // 1. 清晨衝浪時段（06:30-08:30）

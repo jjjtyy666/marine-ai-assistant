@@ -2,7 +2,6 @@ import { Cloud, Wind, Droplets, Eye, ThermometerSun } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card'
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
 import type { WeatherData } from '@/types'
-import { getWindDirection } from '@/lib/utils'
 
 interface WeatherCardProps {
   data: WeatherData

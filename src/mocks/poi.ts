@@ -242,7 +242,7 @@ export const mockPOIs: POI[] = [
 ]
 
 // Helper function to get POIs by spot
-export function getPOIsBySpot(spotId: string, radiusKm: number = 5): POI[] {
+export function getPOIsBySpot(spotId: string, _radiusKm: number = 5): POI[] {
   const spotPrefixes: Record<string, string> = {
     'cijin': 'poi_cijin',
     'jinshan': 'poi_jinshan',

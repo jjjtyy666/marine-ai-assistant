@@ -109,13 +109,12 @@ async function getStormglassSeaState(
  * NOAA API (美國國家海洋和大氣管理局)
  */
 async function getNOAASeaState(
-  lat: number,
-  lng: number,
+  _lat: number,
+  _lng: number,
   date?: string
 ): Promise<SeaStateData> {
   // NOAA API 需要特定的測站 ID，這裡簡化處理
   // 實際使用時需要根據座標找到最近的測站
-  const { baseURL } = SEA_STATE_CONFIG.noaa
 
   // 這裡需要根據實際 NOAA API 進行實作
   // 目前提供基本結構

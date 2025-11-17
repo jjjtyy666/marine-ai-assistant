@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { Wind, Waves, TrendingUp, Eye, Droplets, Thermometer, Navigation, AlertTriangle } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card'
-import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { mockSpots } from '@/mocks/spots'
 import { api } from '@/services/api'
@@ -33,7 +32,6 @@ export default function DashboardPage() {
   const [loading, setLoading] = useState(true)
 
   const spots = mockSpots.filter(s => s.type === 'surf')
-  const currentSpot = spots.find(s => s.id === selectedSpot)
 
   useEffect(() => {
     loadData()

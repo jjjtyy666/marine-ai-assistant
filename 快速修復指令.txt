@@ -1,0 +1,55 @@
+========================================
+快速修復遠端 URL 並推送
+========================================
+
+問題：遠端 URL 設定錯誤
+錯誤：https://github.com/您的帳號/倉庫名稱.git/
+正確：https://github.com/jjjtyy666/marine-ai-assistant.git
+
+========================================
+方法 1：使用批次腳本（推薦）
+========================================
+
+雙擊執行：修復遠端URL.bat
+
+========================================
+方法 2：手動執行指令
+========================================
+
+在你的 PowerShell 終端中（已經在專案目錄），執行：
+
+1. 檢查當前遠端 URL：
+   git remote -v
+
+2. 更新遠端 URL：
+   git remote set-url origin https://github.com/jjjtyy666/marine-ai-assistant.git
+
+3. 確認遠端 URL：
+   git remote -v
+
+4. 推送：
+   git push -u origin main
+
+推送時輸入：
+- Username: jjjtyy666
+- Password: [貼上 Personal Access Token]
+
+========================================
+如果還是失敗
+========================================
+
+1. 確認 GitHub 倉庫存在：
+   https://github.com/jjjtyy666/marine-ai-assistant
+
+2. 確認 Personal Access Token：
+   - 前往：https://github.com/settings/tokens
+   - 確認 token 有 repo 權限
+   - 確認 token 未過期
+
+3. 重新建立 token（如果需要）：
+   - 刪除舊 token
+   - 建立新 token（勾選 repo 權限）
+   - 複製新 token
+
+========================================
+

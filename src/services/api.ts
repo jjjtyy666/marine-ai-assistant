@@ -3,8 +3,8 @@ import { mockSpots } from '@/mocks/spots'
 import { getMockWeather } from '@/mocks/weatherData'
 import { getMockSeaState } from '@/mocks/seaStateData'
 import { getMockTide } from '@/mocks/tideData'
-import { mockPOIs, getPOIsBySpot, getPOIsByCategory } from '@/mocks/poi'
-import { mockOpenHours, getOpenHours } from '@/mocks/openHours'
+import { getPOIsBySpot, getPOIsByCategory } from '@/mocks/poi'
+import { getOpenHours } from '@/mocks/openHours'
 import { generateDayPlan } from '@/mocks/planningData'
 import { calculateRoute } from '@/lib/planningUtils'
 import { API_CONFIG, getApiUrl, getHeaders } from '@/config/api'
@@ -351,7 +351,7 @@ export const api = {
   /**
    * Mock 模式的聊天訊息處理（保留原有邏輯作為後備）
    */
-  async sendChatMessageMock(message: string, history: ChatMessage[]): Promise<ChatMessage> {
+  async sendChatMessageMock(message: string, _history: ChatMessage[]): Promise<ChatMessage> {
     await delay(800)
     
     const toolCalls: ToolCall[] = []
@@ -530,7 +530,7 @@ export const api = {
   /**
    * 檢測用戶意圖並調用相關工具
    */
-  async detectAndCallTools(message: string, history: ChatMessage[]): Promise<ToolCall[]> {
+  async detectAndCallTools(message: string, _history: ChatMessage[]): Promise<ToolCall[]> {
     const toolCalls: ToolCall[] = []
     const lowerMessage = message.toLowerCase()
     

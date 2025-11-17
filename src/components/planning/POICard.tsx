@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
-import { Star, MapPin, Phone, DollarSign, Clock } from 'lucide-react'
+import { Star, MapPin, Phone, DollarSign } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 import type { POI } from '@/types'
-import { getPOICategoryName, getPriceRangeText } from '@/lib/planningUtils'
+import { getPOICategoryName } from '@/lib/planningUtils'
 
 interface POICardProps {
   poi: POI
@@ -16,7 +16,6 @@ export default function POICard({
   poi,
   isFavorite,
   onToggleFavorite,
-  onAddToPlan,
 }: POICardProps) {
   const categoryIcons: Record<string, string> = {
     food: '🍽️',

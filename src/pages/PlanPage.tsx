@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { Calendar, MapPin, DollarSign, Users, Bike, Send } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card'
@@ -14,7 +13,6 @@ import POIGroupList from '@/components/planning/POIGroupList'
 import { getMobilityIcon, getMobilityName } from '@/lib/planningUtils'
 
 export default function PlanPage() {
-  const { t } = useTranslation()
   const navigate = useNavigate()
   
   const [selectedSpot, setSelectedSpot] = useState('cijin')

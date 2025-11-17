@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Clock, MapPin, DollarSign, AlertTriangle, Navigation } from 'lucide-react'
+import { Clock, DollarSign, AlertTriangle, Navigation } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 import type { PlanDay } from '@/types'

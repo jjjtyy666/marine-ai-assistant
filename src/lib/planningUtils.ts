@@ -1,4 +1,4 @@
-import type { Mobility, PlanDay, RouteInfo, POI, SeaStateData, WeatherData } from '@/types'
+import type { Mobility, PlanDay, RouteInfo, SeaStateData } from '@/types'
 
 // Haversine 距離計算（km）
 export function calculateDistance(
@@ -59,7 +59,7 @@ export function minutesToTime(totalMinutes: number): string {
 
 // 判斷是否為衝浪最佳時段（基於潮汐）
 export function isGoodSurfTime(
-  time: string,
+  _time: string,
   seaState: SeaStateData
 ): boolean {
   // 簡化邏輯：浪高 0.5-2.5m 較適合，週期 > 6s
@@ -67,7 +67,7 @@ export function isGoodSurfTime(
 }
 
 // 取得日落時間（簡化版，實際應用可用 sunrise-sunset API）
-export function getSunsetTime(date: Date, lat: number): string {
+export function getSunsetTime(date: Date, _lat: number): string {
   // 簡化：台灣夏季約 18:30，冬季約 17:30
   const month = date.getMonth() + 1
   const isSummer = month >= 5 && month <= 9

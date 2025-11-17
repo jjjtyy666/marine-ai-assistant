@@ -88,9 +88,9 @@ export default function MessageBubble({ message }: MessageBubbleProps) {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1 }}
               >
-                {tool.type === 'weather' && <WeatherCard data={tool.data} spotName={tool.spotName} />}
-                {tool.type === 'seaState' && <SeaStateCard data={tool.data} spotName={tool.spotName} />}
-                {tool.type === 'tide' && <TideCard data={tool.data} spotName={tool.spotName} />}
+                {tool.type === 'weather' && <WeatherCard data={tool.data as any} spotName={tool.spotName} />}
+                {tool.type === 'seaState' && <SeaStateCard data={tool.data as any} spotName={tool.spotName} />}
+                {tool.type === 'tide' && <TideCard data={tool.data as any} spotName={tool.spotName} />}
                 {tool.type === 'nearbyPOIs' && (
                   <POIGroupList 
                     pois={tool.data as POI[]} 

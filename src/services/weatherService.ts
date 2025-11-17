@@ -4,7 +4,6 @@
  */
 
 import type { WeatherData, HourlyWeather } from '@/types'
-import { API_CONFIG } from '@/config/api'
 
 /**
  * 計算體感溫度（Heat Index / Apparent Temperature）
@@ -218,7 +217,6 @@ async function getCWBData(
 
   // 取得當前時間的資料（第一個時間點）
   const currentTime = wxData?.time?.[0]
-  const currentWx = currentTime?.elementValue?.[0]?.value || ''
   const currentPop = popData?.time?.[0]?.elementValue?.[0]?.value || '0'
   const currentMinT = minTData?.time?.[0]?.elementValue?.[0]?.value || '25'
   const currentMaxT = maxTData?.time?.[0]?.elementValue?.[0]?.value || '30'
@@ -261,7 +259,6 @@ async function getCWBData(
     for (let i = 0; i < Math.min(24, wxData.time.length * 3); i++) {
       // CWB 每 12 小時一個資料點，我們需要插值為每小時
       const dataIndex = Math.floor(i / 3) // 每 3 小時對應一個 CWB 資料點
-      const time = wxData.time[dataIndex] || wxData.time[0]
       
       const minT = minTData?.time?.[dataIndex]?.elementValue?.[0]?.value || currentMinT
       const maxT = maxTData?.time?.[dataIndex]?.elementValue?.[0]?.value || currentMaxT

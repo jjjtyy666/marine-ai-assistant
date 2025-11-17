@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import type { Spot } from '@/types'
-import { Button } from '@/components/ui/Button'
 import { MessageCircle, Star } from 'lucide-react'
 import 'leaflet/dist/leaflet.css'
 

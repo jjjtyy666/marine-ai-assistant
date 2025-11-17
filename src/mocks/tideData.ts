@@ -18,7 +18,6 @@ function generateHourlyTide(): HourlyTide[] {
 }
 
 export function getMockTide(spotId: string, date: string): TideData {
-  const now = new Date()
   const hourlyData = generateHourlyTide()
   
   // 找出下次高潮和低潮

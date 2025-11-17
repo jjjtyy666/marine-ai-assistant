@@ -3,17 +3,8 @@
  * 整合多種 AI 提供者（OpenAI、Anthropic、DeepSeek、自訂 API）
  */
 
-import { AI_CONFIG, validateAIConfig, type AIProvider } from '@/config/ai'
+import { AI_CONFIG, validateAIConfig } from '@/config/ai'
 import type { ChatMessage, ToolCall } from '@/types'
-
-interface AIChatRequest {
-  messages: Array<{
-    role: 'user' | 'assistant' | 'system'
-    content: string
-  }>
-  tools?: any[]
-  tool_choice?: 'auto' | 'none' | { type: 'function'; function: { name: string } }
-}
 
 interface AIChatResponse {
   content: string

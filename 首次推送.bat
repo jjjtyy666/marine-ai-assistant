@@ -90,7 +90,7 @@ if errorlevel 1 (
     echo 可能的原因：
     echo 1. 認證失敗 - 請確認 Personal Access Token 正確
     echo 2. 遠端倉庫不存在 - 請確認倉庫已建立
-    echo 3. 沒有權限 - 請確認 token 有 "repo" 權限
+    echo 3. 沒有權限 - 請確認 token 有 repo 權限（不是密碼）
     echo.
     echo 嘗試強制推送（如果遠端是空的）...
     echo.
