@@ -30,3 +30,66 @@ dist-ssr
 .env.test.local
 .env.production.local
 
+# Cursor IDE
+.cursor/
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# Ollama models and data
+.ollama/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# System directories (should not be in project root)
+AppData/
+Local Settings/
+Application Data/
+Cookies/
+My Documents/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Templates/
+Contacts/
+Documents/
+Downloads/
+Favorites/
+Links/
+Music/
+Saved Games/
+Searches/
+Videos/
+
+# User-specific files
+NTUSER.DAT*
+ntuser.dat*
+*.LOG*
+.gitconfig
+student.sqlite
+npm
+source/
+
+# Other system files
+.Ld9VirtualBox/
+.cache/
+.dbus-keyrings/
+.docker/
+.dotnet/
+.gradio/
+.idlerc/
+.lmstudio-home-pointer
+.lmstudio/
+.matplotlib/
+.n8n-mcp/
+.node_repl_history
+.nuget/
+.ssh/
+.templateengine/
+.trae-aicc/
+.trae/
+
